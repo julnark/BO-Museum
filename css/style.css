@@ -33,7 +33,7 @@ nav h1 {
 nav ul {
     float: right;
     line-height: 1vw;
-    margin-top: -1.5vw;
+    margin-top: -2.5vw;
     margin-right: 1vw;
 }
 
@@ -91,10 +91,9 @@ nav ul li a {
 
 .geschiedenis {
     background-color: #014904ef;
-    width: 50%;
-    margin: auto;
+    width: 25%;
     text-align: center;
-    transform: translateY(25vh); 
+    transform: translateX(25vw);
 }
 
 .geschiedenis h1 {
