@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-section .container {
+#section-a{
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.207), rgba(0, 0, 0, 0.60)), url(../img/fotomuseumeen.jpg);
     background-repeat: no-repeat;
@@ -21,16 +21,20 @@ nav {
 }
 
 nav h1 {
-    float: left;
+    display: flex;
+    justify-content: left;
     line-height: 80px;
     font-size: 20px;
     font-size: inline;
+    padding-left: 1.9vw;
     color: white;
 }
 
 nav ul {
     float: right;
-    line-height: 80px;
+    line-height: 1vw;
+    margin-top: -2.5vw;
+    margin-right: 1vw;
 }
 
 nav ul li {
@@ -51,10 +55,12 @@ nav ul li a {
     width: 50%;
     margin: auto;
     text-align: center;
-    transform: translateY(25vh);
+    transform: translate(0vh,25vh);
 }
 
 .article h1 {
+    display: flex;
+    justify-content: center;
     font-size: 36px;
     color: white;
     letter-spacing: 1.5px;
@@ -79,15 +85,15 @@ nav ul li a {
 }
 
 .article .btn:hover {
-    background-color: #4399fa;
+    background-color: #016016;
     transition: 0.5s ease;
 }
 
 .geschiedenis {
     background-color: #014904ef;
-    width: 100%;
+    width: 25%;
     text-align: center;
-    margin: auto;
+    transform: translateX(25vw);
 }
 
 .geschiedenis h1 {
