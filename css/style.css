@@ -120,3 +120,7 @@ nav ul li a {
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1000px){
+    
+}
