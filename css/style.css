@@ -14,7 +14,17 @@
     height: 800px;
 }
 
+#foto1{
+    height: 30vb;
+    margin-left: 50vw;
+    margin-top: 10vw;
+}
 
+#foto2{
+    height: 30vb;
+    margin-left: 20vw;
+    margin-top: 10vw;
+}
 
 nav {
     height: 80px;
@@ -90,10 +100,10 @@ nav ul li a {
 }
 
 .geschiedenis {
-    background-color: #014904ef;
     width: 25%;
     text-align: center;
-    transform: translateX(25vw);
+    transform: translateX(25vw);    
+    margin-top: -12.5vw;
 }
 
 .geschiedenis h1 {
@@ -105,13 +115,15 @@ nav ul li a {
 
 .geschiedenis p {
     font-size: 18px;
-    color: whitesmoke;   
+    color: rgb(0, 0, 0);   
     line-height: 1.5;
 }
 
 .tijden {
-    background-color:  #014904ef;
-    width: 100%;  
+    margin-top: 10vw;
+    margin-left: 50vw;
+    width: 100%;     
+    margin-top: -14vw;
 }
 
 .tijden h2{
@@ -123,4 +135,14 @@ nav ul li a {
 
 @media screen and (max-width: 1000px){
     
+}
+
+#section-d{
+    margin-top: 10vw;
+    margin-left: 25vw;
+}
+
+#Contact{
+        margin-top: -4vw;
+        margin-left: 40vw;
 }
