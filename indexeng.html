@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <title>NXT Museum</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <section id="section-a">
+    <section id="header">
         <nav class="container">
             <h1>NXT Museum</h1>
             <ul>
@@ -17,14 +19,12 @@
                 <li><a href="">Your Visit</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="index.html">NL | <b>ENG</b></a></li>
-
+                <li><a href="indexeng.html"><b>NL | </b>ENG</a></li>
             </ul>
         </nav>
         <article class="article">
             <h1>What is NXT?</h1>
-            <p>
-                NXT Museum is the first museum in the Netherlands entirely dedicated to media art. We exhibit
+            <p> NXT Museum is the first museum in the Netherlands entirely dedicated to media art. We exhibit
                 artworks that utilize modern technologies of the present and the future. Because art reflects the spirit
                 of the times, we believe that the most innovative art provides us with the opportunity to reflect on the
                 impact of technological advancements. A moment of contemplation in a reality that is continuously
@@ -33,19 +33,22 @@
             <a href="" class="btn">Tickets</a>
         </article>
     </section>
-    <section id="section-b">
-        <div class="geschiedenis">
-            <h1>NXT history</h1>
+    <section id="geschiedenis">
+        <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXTMuseum Foto Licht valt naar beneden">
+        <article class="geschiedenis" id="geschiedenisp1">
+            <h1>NXT History</h1>
             <p>
                 The NXT Museum was founded by the young entrepreneur Merel van Helsdingen and showcases large-scale art
                 installations developed through interdisciplinary collaborations between established and emerging
                 artists, designers, technicians, musicians, and scientists.
             </p>
-        </div>
+        </article>
     </section>
-    <section id="section-c">
-        <div class="tijden">
-            <h2>Opening hours</h2>
+    <section id="tijden">
+        <img id="foto2" src="img/NXTMuseumTijden.jpg"
+            alt="NXTMuseum Foto Grote Kamer met Kunst geprojecteerd op de muren">
+        <article class="tijden">
+            <h2>Opening Hours </h2>
             <p>
                 Sun – Tues : 10:30 – 20:30 <br>
                 Wed: 11 – 21:30 <br>
@@ -54,33 +57,54 @@
             <h2>Special Opening Hours</h2>
             <p>
                 24 december : 10:30 – 17:30<br>
-                25 december : closed<br>
+                25 december : Closed<br>
                 26 december : 12:00 – 21:00<br>
                 31 jan : 10:30 – 17:00<br>
                 1 jan : 12:00 – 21:00
             </p>
-        </div>
+        </article>
     </section>
-    <section id="section-d">
-        <div class="address">
-            <h1>Adres</h1>
-            <p>
-                Asterweg 22<br>
-                1031HP Amsterdam<br>
-                Nederland
-
-            </p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">info@nxtmuseum.com</a></li>
+                        <li><a href="#"></a>www.nxtmuseum.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Adress</h4>
+                    <ul>
+                        <li><a href="#">NXT Museum</li>
+                        <li><a href="#">Asterweg 22</a></li>
+                        <li><a href="#">1031HP</a></li>
+                        <li><a href="#">Amsterdam</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow NXT </h4>
+                    <div class="social-links">
+                        <a href="#"> <i class="fab  fa-instagram"></i></a>
+                        <a href="#"> <i class="fab fa-youtube"></i></a>
+                        <a href="#"> <i class="fab fa-tiktok"></i></a>
+                        <a href="#"> <i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay in the loop with what's Nxt</h4>
+                    <ul>
+                        <li><a href="#">We’d like to send you e-mails now and then.</a></li>
+                        <form>
+                            <i style="font-size:24px" class="fa">&#xf0e0;</i>
+                            <input type="email" placeholder="E-MAIL ADRES" required>
+                        </form>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="Contact">
-        <div class="contact">
-            <h1>Contact</h1>
-            <p>
-                info@nxtmuseum.com <br>
-                www.nxtmuseum.com <br>
-            </p>
-        </div>
-    </section>
+    </footer>
 </body>
 
 </html>
