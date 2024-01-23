@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="nl">
 
 <head>
     <title>NXT Museum</title>
@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" defer src="action.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <nav class="container">
+        <nav class="header">
             <h1>NXT Museum</h1>
             <ul>
                 <li><a href="">Home</a></li>
@@ -33,11 +34,18 @@
             </p>
             <a class="btn"
                 href="https://tickets.nxtmuseum.com/nl/tickets?_gl=1*g7lu0y*_ga*MzYwNDQ5MDMwLjE3MDA2NTAwNjc.*_ga_FL5TDXMYGX*MTcwMTg2MDQ2Ni4xMS4xLjE3MDE4NjA0ODcuMC4wLjA.*_fplc*QngzT0FKSER4U3ElMkIlMkZCWTdXTWdMNHFGd1h3QVppZEtROU1zaGVqdHRZTm9oU281ZENMbnRNeGU4WXJiZkFHJTJGVU40M2ozQ3BkOXBEMjhuM1pCb2lYMlYzUDA1b2lvbTI5NjhkMTNTRDVzeWsxNkFQZFdMbzZtVFloeGE0TlJnJTNEJTNE"
-                target="_blank">Tickets</a>
+                target="_blank">TICKETS</a>
         </article>
     </section>
+
     <section id="geschiedenis">
-        <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXTMuseum Foto Licht valt naar beneden">
+        <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXT Museum Green large project that covers the entire room.">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
         <article class="geschiedenis" id="geschiedenisp1">
             <h1>NXT History</h1>
             <p>
@@ -48,23 +56,15 @@
         </article>
     </section>
 
-    <div class="reviews">
-        <div class="review" id="review1">
-            <h3> Naomi Toure</h3>
-            <p>"A unique and interactive way to experience a museum. The living room is truly an amazing experience.
-                You'll be amazed at what is possible with digital art. I will definitely go again!"</p>
-        </div>
-        <div class="review" id="review2">
-            <h3>Jacky Luttikhuis</h3>
-            <p>Wat je te zien krijgt is echt heel mooi, daar kan ik niet over liegen. Het was alleen een behoorlijke
-                tegenvaller dat het zo weinig is. </p>
-
-        </div>
-    </div>
-
     <section id="tijden">
         <img id="foto2" src="img/NXTMuseumTijden.jpg"
-            alt="NXTMuseum Foto Grote Kamer met Kunst geprojecteerd op de muren">
+            alt="NXT Museum project with various colors that complement each other visible on the walls and the floor.">
+        <div id="myModal1" class="modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption1"></div>
+        </div>
+
         <article class="tijden">
             <h2>Opening Hours </h2>
             <p>
@@ -82,8 +82,23 @@
             </p>
         </article>
     </section>
+
+    <div class="reviews">
+        <div class="review" id="review1">
+            <h3> Naomi Toure</h3>
+            <p>A unique and interactive way to experience a museum. The living room is truly an amazing experience.
+                You'll be amazed at what is possible with digital art. I will definitely go again</p>
+        </div>
+        <div class="review" id="review2">
+            <h3>Jacky Luttikhuis</h3>
+            <p>What you get to see is really beautiful, I can't deny that. It was just quite disappointing that it's so
+                little, especially considering the money you pay for it. Very unfortunate!</p>
+
+        </div>
+    </div>
+
     <footer class="footer">
-        <div class="container">
+        <div class="footer">
             <div class="row">
                 <div class="footer-col">
                     <h4>Contact</h4>
@@ -92,7 +107,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Adres</h4>
+                    <h4>Adress</h4>
                     <ul>
                         <li><a href="#">NXT Museum</li>
                         <li><a href="#">Asterweg 22</a></li>
@@ -114,7 +129,9 @@
                 <div class="footer-col">
                     <h4>Stay in the loop with what's Nxt</h4>
                     <ul>
-                        <li><a href="#">We’d like to send you e-mails now and then.</a></li>
+                        <li><a href="#">We’d like to send you e-mails now and then.
+                        </a></li>
+                        
                         <form>
                             <i style="font-size:24px" class="fa">&#xf0e0;</i>
                             <input type="email" placeholder="E-MAIL ADRES" required>

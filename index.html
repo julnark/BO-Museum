@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" defer src="action.js"></script>
 </head>
 
 <body>
     <section id="header">
-        <nav class="container">
+        <nav class="header">
             <h1>NXT Museum</h1>
             <ul>
                 <li><a href="">Home</a></li>
@@ -36,8 +37,15 @@
                 target="_blank">Koop ticket</a>
         </article>
     </section>
+
     <section id="geschiedenis">
-        <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXTMuseum Foto Licht valt naar beneden">
+        <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXT Museum Groene grote project die de hele kamer bedekt.">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
         <article class="geschiedenis" id="geschiedenisp1">
             <h1>NXT Geschiedenis</h1>
             <p>
@@ -47,10 +55,16 @@
             </p>
         </article>
     </section>
-   
+
     <section id="tijden">
         <img id="foto2" src="img/NXTMuseumTijden.jpg"
-            alt="NXTMuseum Foto Grote Kamer met Kunst geprojecteerd op de muren">
+            alt="NXT Museum project met verschillende kleuren die bij elkaar passen wat op de muren en de grond te zien is.">
+        <div id="myModal1" class="modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption1"></div>
+        </div>
+
         <article class="tijden">
             <h2>Openingstijden </h2>
             <p>
@@ -77,14 +91,15 @@
         </div>
         <div class="review" id="review2">
             <h3>Jacky Luttikhuis</h3>
-            <p>What you get to see is really beautiful, I can't deny that. It was just quite disappointing that it's so
-                little, especially considering the money you pay for it. Very unfortunate!</p>
+            <p>Wat je te zien krijgt is echt heel mooi, daar kan ik niet over liegen. Het was alleen een behoorlijke
+                tegenvaller dat het zo weinig is.
+                Very unfortunate!</p>
 
         </div>
     </div>
-    
+
     <footer class="footer">
-        <div class="container">
+        <div class="footer">
             <div class="row">
                 <div class="footer-col">
                     <h4>Contact</h4>
