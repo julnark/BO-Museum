@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #header {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.207), rgba(0, 0, 0, 0.60)), url(../img/museumbg.png);
