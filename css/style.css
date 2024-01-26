@@ -12,9 +12,15 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: white;
 }
 
-#header {
+body {
+    line-height: 1.5;
+    background: #000000;
+}
+
+.header {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.207), rgba(0, 0, 0, 0.60)), url(../img/museumbg.png);
     background-repeat: no-repeat;
@@ -23,11 +29,13 @@ html {
     height: 800px;
 }
 
-nav {
+.headerNAV {
+    max-width: 1170px;
+    margin: auto;
     height: 80px;
 }
 
-nav h1 {
+.NavH1 {
     display: flex;
     justify-content: left;
     line-height: 80px;
@@ -37,7 +45,7 @@ nav h1 {
     color: white;
 }
 
-nav ul {
+.NavUL {
     float: right;
     line-height: 1vw;
     margin-top: -2.5vw;
@@ -61,6 +69,77 @@ nav ul li a {
 nav ul li a:hover {
     color: hsl(207, 61%, 50%);
 }
+
+.NXT {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translate(0vh, 25vh);
+}
+
+.NXT h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.NXT p {
+    font-size: 18px;
+    color: whitesmoke;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.NXT .btn {
+    color: black;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+}
+
+.NXT .btn:hover {
+    background-color: hsl(207, 61%, 50%);
+    transition: 0.5s ease;
+}
+
+
+.info {
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoTitle {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.info p {
+    font-size: 18px;
+    color: whitesmoke;
+    max-width: 50ch;
+}
+
+
+.block {
+    width: 400px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
 
 #foto1 {
     height: 30vb;
@@ -153,67 +232,6 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.article {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    transform: translate(0vh, 25vh);
-}
-
-.article h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 36px;
-    color: white;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.article p {
-    font-size: 18px;
-    color: whitesmoke;
-    line-height: 1.5;
-    margin-bottom: 50px;
-}
-
-.article .btn {
-    color: black;
-    padding: 12px 25px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: white;
-}
-
-.article .btn:hover {
-    background-color: hsl(207, 61%, 50%);
-    transition: 0.5s ease;
-}
-
-.geschiedenis {
-    width: 25%;
-    text-align: center;
-    transform: translateX(25vw);
-    margin-top: -12.5vw;
-}
-
-.geschiedenis h1 {
-    font-size: 25px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: white;
-
-}
-
-.geschiedenis p {
-    font-size: 18px;
-    color: whitesmoke;
-    line-height: 1.5;
-    margin-right: 25px;
-}
-
 .tijden {
     margin-top: 10vw;
     margin-left: 50vw;
@@ -228,6 +246,63 @@ nav ul li a:hover {
     font-weight: 600;
     margin-bottom: 10px;
     color: whitesmoke;
+}
+
+.testimonials{
+    padding: 40px 0;
+    text-align: center;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: hsl(207, 61%, 50%);
+    margin: 26px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial{
+    background:  hsl(207, 61%, 50%);
+    padding: 30px;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    margin-bottom: 20px;
+}
+
+.reviews-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.checked {
+    color: yellow;
 }
 
 .footer {
@@ -305,11 +380,6 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.header {
-    max-width: 1170px;
-    margin: auto;
-}
-
 form {
     padding-bottom: 15px;
     display: flex;
@@ -346,127 +416,16 @@ div ul {
     list-style: none;
 }
 
-body {
-    line-height: 1.5;
-    background: #000000;
-}
-
-.reviews {
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-}
-
-.review {
-    position: center;
-}
-
-.review h3 {
-
-    padding-left: 50px;
-    padding-left: 50px;
-    margin-top: 40px;
-}
-
-.review p {
-    font-size: 10pt;
-    color: white;
-    background: transparent;
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid white;
-    margin: 20px;
-    margin-top: 10px;
-    position: center;
-    letter-spacing: 1px;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.review p::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #000000;
-    border: 3px solid black;
-    border-radius: 10px;
-    transform: rotate(45deg);
-    position: center;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
-    top: -12px;
-    left: -13px;
-}
-
-.review p::after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #000000;
-    border: 3px solid white;
-    transform: rotate(-132deg);
-    position: absolute;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
-    top: auto;
-    right: -13px;
-    bottom: -12px;
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
-
-    main {
-        width: 100vw;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 180%;
-    }
-
-    footer>p {
-        width: 100vw;
-        padding-left: 60px;
+@media screen and (max-width: 960px){
+    .coll{
+        flex: 100%;
+        max-width: 80%;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    main {
-        width: 80vw;
-    }
-
-    footer>p {
-        width: 80vw;
-    }
-
-    img:hover {
-        transform: none;
-    }
-
-    .top {
-        width: 60px;
-        height: 60px;
-        bottom: 60px;
-        right: 60px;
-    }
-
-    header {
-        height: auto;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    nav>ul {
-        display: block;
+@media screen and (max-width: 600px){
+    .coll{
+        flex: 100%;
+        max-width: 100%;
     }
 }

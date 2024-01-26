@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <section id="header">
-        <nav class="header">
-            <h1>NXT Museum</h1>
-            <ul>
+    <section class="header">
+        <nav class="headerNAV">
+            <h1 class="NavH1">NXT Museum</h1>
+            <ul class="NavUL">
                 <li><a href="">Home</a></li>
                 <li><a class="hover" href="https://nxtmuseum.com/nl/jouw-bezoek/" target="_blank">Jouw bezoek</a></li>
                 <li><a class="hover" href="https://nxtmuseum.com/nl/de-kunst-van-morgen-vandaag/" target="_blank">Over
@@ -24,7 +24,8 @@
                 <li><a href="indexeng.html"><b>NL</b> | ENG</a></li>
             </ul>
         </nav>
-        <article class="article">
+
+        <article class="NXT">
             <h1>Wat is NXT?</h1>
             <p> NXT Museum is het eerste museum in Nederland dat zich volledig richt op mediakunst. We exposeren
                 kunstwerken die gebruik maken van moderne technologieën van het heden en van de toekomst. Omdat
@@ -38,7 +39,7 @@
         </article>
     </section>
 
-    <section id="geschiedenis">
+    <section class="information">
         <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXT Museum Groene grote project die de hele kamer bedekt.">
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -46,17 +47,33 @@
             <div id="caption"></div>
         </div>
 
-        <article class="geschiedenis" id="geschiedenisp1">
-            <h1>NXT Geschiedenis</h1>
-            <p>
-                NXT museum is opgericht door de jonge ondernemer Merel van Helsdingen, exposeert grootschalige
-                kunstinstallaties, die worden ontwikkeld vanuit interdisciplinaire samenwerkingen tussen gevestigde en
-                opkomende kunstenaars, ontwerpers, technici, muzikanten en wetenschappers.
-            </p>
+        <article class="info">
+            <div class="block">
+                <h2 class="infoTitle">NXT Geschiedenis</h1>
+                    <p>
+                        NXT museum is opgericht door de jonge ondernemer Merel van Helsdingen, exposeert grootschalige
+                        kunstinstallaties, die worden ontwikkeld vanuit interdisciplinaire samenwerkingen tussen
+                        gevestigde en
+                        opkomende kunstenaars, ontwerpers, technici, muzikanten en wetenschappers.
+                        NXT is een brand van de Amerikaanse worstelorganisatie WWE dat gelanceerd werd op 23
+                        februari 2010.
+                    </p>
+            </div>
+
+            <div class="block">
+                <h2 class="infoTitle">Wat is er te doen?</h2>
+                <p>Te komen ontdekken "What's NXT?" In de wereld van technologische en sociale ontwikkelingen. Van
+                    projectie tot licht en laser, u kijkt uw ogen uit naar alle vormen van nieuwe mediakunst in het Nxt
+                    Museum.
+
+                    Behalve de tntoonstelling van grootschalige multi-zintuigelijke installaties, ontdekt u in het NXT
+                    Museum verder ook diverse evenementen. Van eigen face filters maken tot NFT-games passern de revue.
+                </p>
+            </div>
         </article>
     </section>
 
-    <section id="tijden">
+    <section class="tijdeninfo">
         <img id="foto2" src="img/NXTMuseumTijden.jpg"
             alt="NXT Museum project met verschillende kleuren die bij elkaar passen wat op de muren en de grond te zien is.">
         <div id="myModal1" class="modal1">
@@ -83,18 +100,69 @@
         </article>
     </section>
 
-    <div class="reviews">
-        <div class="review" id="review1">
-            <h3> Naomi Toure</h3>
-            <p>Een bijzondere en interactieve manier om een museum te ervaren. De living room is echt een geweldige
-                experience. Je verbaasd je wat allemaal mogelijk is met digitale kunst. Ik zal zeker nog eens gaan!</p>
-        </div>
-        <div class="review" id="review2">
-            <h3>Jacky Luttikhuis</h3>
-            <p>Wat je te zien krijgt is echt heel mooi, daar kan ik niet over liegen. Het was alleen een behoorlijke
-                tegenvaller dat het zo weinig is.
-                Very unfortunate!</p>
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Reviews</h1>
+            <div class="border"></div>
 
+            <section class="reviews-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial">
+                            <div class="name">Full Name</div>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sit ducimus saepe
+                                sunt accusantium maxime, iusto, consectetur libero molestias quaerat explicabo earum
+                                quasi
+                                odit qui dolorum temporibus incidunt officia enim.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial">
+                            <div class="name">Full Name</div>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sit ducimus saepe
+                                sunt accusantium maxime, iusto, consectetur libero molestias quaerat explicabo earum
+                                quasi
+                                odit qui dolorum temporibus incidunt officia enim.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial">
+                            <div class="name">Full Name</div>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sit ducimus saepe
+                                sunt accusantium maxime, iusto, consectetur libero molestias quaerat explicabo earum
+                                quasi
+                                odit qui dolorum temporibus incidunt officia enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
