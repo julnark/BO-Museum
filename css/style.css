@@ -29,7 +29,7 @@ body {
     height: 800px;
 }
 
-.headerNAV {
+.headernav {
     max-width: 1170px;
     margin: auto;
     height: 80px;
@@ -108,51 +108,42 @@ nav ul li a:hover {
     transition: 0.5s ease;
 }
 
-
-.info {
-    padding: 40px;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+.geschiedenis{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 5rem;
 }
 
-.infoTitle {
-    font-size: 25px;
-    letter-spacing: 1.5px;
-    color: white;
+.geschiedenis-text h3{
+    font-size: 22px;
+    font-weight: 800;
     text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-top: 80px;
 }
 
-.info p {
-    font-size: 18px;
-    color: whitesmoke;
-    max-width: 50ch;
+.geschiedenis-text p{
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 10px;
 }
-
-
-.block {
-    width: 400px;
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-
 
 
 #foto1 {
-    height: 30vb;
-    margin-left: 50vw;
-    margin-top: 10vw;
-    border-radius: 5px;
+    height: 40vb;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+    margin-left: 10vw;
+    margin-top: 5vw;
 }
 
 #foto2 {
-    height: 30vb;
-    margin-left: 20vw;
+    height: 40vb;
+    margin-left: 30vw;
     margin-top: 10vw;
     border-radius: 5px;
     cursor: pointer;
@@ -234,7 +225,7 @@ nav ul li a:hover {
 
 .tijden {
     margin-top: 10vw;
-    margin-left: 50vw;
+    margin-left: 60vw;
     width: 100%;
     margin-top: -14vw;
     color: whitesmoke;
@@ -248,7 +239,7 @@ nav ul li a:hover {
     color: whitesmoke;
 }
 
-.testimonials{
+.reviews{
     padding: 40px 0;
     text-align: center;
     color: whitesmoke;
@@ -265,7 +256,7 @@ nav ul li a:hover {
 .border{
     width: 160px;
     height: 5px;
-    background: hsl(207, 61%, 50%);
+    background: hwb(148 3% 43%);
     margin: 26px auto;
 }
 
@@ -280,8 +271,8 @@ nav ul li a:hover {
     padding: 15px;
 }
 
-.testimonial{
-    background:  hsl(207, 61%, 50%);
+.review{
+    background:  hwb(148 3% 43%);
     padding: 30px;
 }
 
@@ -313,7 +304,7 @@ nav ul li a:hover {
 
 .footer-col {
     width: 25%;
-    padding: 0 15px;
+    padding: 0 40px;
     bottom: 0;
     left: 0;
 }
@@ -362,7 +353,7 @@ nav ul li a:hover {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: hsl(207, 61%, 50%);
+    background-color: hwb(148 3% 43%);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -375,7 +366,7 @@ nav ul li a:hover {
     color: rgb(199, 51, 204);
 }
 
-.row {
+.rowr {
     display: flex;
     flex-wrap: wrap;
 }
