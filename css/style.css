@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: hsl(207, 61%, 50%);
+    color: hwb(148 3% 43%);
 }
 
 .NXT {
@@ -104,7 +104,7 @@ nav ul li a:hover {
 }
 
 .NXT .btn:hover {
-    background-color: hsl(207, 61%, 50%);
+    background-color: hwb(148 3% 43%);
     transition: 0.5s ease;
 }
 
@@ -345,7 +345,7 @@ nav ul li a:hover {
 }
 
 .footer-col ul li a:hover {
-    color: hsl(207, 61%, 50%);
+    color: hwb(148 3% 43%);
     padding-left: 8px;
 }
 
@@ -363,7 +363,7 @@ nav ul li a:hover {
 }
 
 .footer-col .social-links a:hover {
-    color: rgb(199, 51, 204);
+    color: #33cccc;
 }
 
 .rowr {
