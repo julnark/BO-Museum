@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <section id="header">
-        <nav class="header">
-            <h1>NXT Museum</h1>
-            <ul>
+    <section class="header">
+        <nav class="headernav">
+            <h1 class="NavH1">NXT Museum</h1>
+            <ul class="NavUL">
                 <li><a href="">Home</a></li>
                 <li><a class="hover" href="https://nxtmuseum.com/nl/jouw-bezoek/" target="_blank">Your Visit</a></li>
                 <li><a class="hover" href="https://nxtmuseum.com/nl/de-kunst-van-morgen-vandaag/" target="_blank">About
@@ -24,7 +24,8 @@
                 <li><a href="index.html"><b>NL | </b>ENG</a></li>
             </ul>
         </nav>
-        <article class="article">
+
+        <article class="NXT">
             <h1>What is NXT?</h1>
             <p> NXT Museum is the first museum in the Netherlands entirely dedicated to media art. We exhibit
                 artworks that utilize modern technologies of the present and the future. Because art reflects the spirit
@@ -34,32 +35,31 @@
             </p>
             <a class="btn"
                 href="https://tickets.nxtmuseum.com/nl/tickets?_gl=1*g7lu0y*_ga*MzYwNDQ5MDMwLjE3MDA2NTAwNjc.*_ga_FL5TDXMYGX*MTcwMTg2MDQ2Ni4xMS4xLjE3MDE4NjA0ODcuMC4wLjA.*_fplc*QngzT0FKSER4U3ElMkIlMkZCWTdXTWdMNHFGd1h3QVppZEtROU1zaGVqdHRZTm9oU281ZENMbnRNeGU4WXJiZkFHJTJGVU40M2ozQ3BkOXBEMjhuM1pCb2lYMlYzUDA1b2lvbTI5NjhkMTNTRDVzeWsxNkFQZFdMbzZtVFloeGE0TlJnJTNEJTNE"
-                target="_blank">TICKETS</a>
+                target="_blank">Buy Tickets</a>
         </article>
     </section>
 
-    <section id="geschiedenis">
-        <img id="foto1" src="img/fotomuseumeen.jpg" alt="NXT Museum Green large project that covers the entire room.">
+    <section class="geschiedenis">
+        <img id="foto1" src="img/foto0.jpg" alt="NXT Museum Groene grote project die de hele kamer bedekt.">
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
         </div>
-
-        <article class="geschiedenis" id="geschiedenisp1">
-            <h1>NXT History</h1>
-            <p>
-                The NXT Museum was founded by the young entrepreneur Merel van Helsdingen and showcases large-scale art
-                installations developed through interdisciplinary collaborations between established and emerging
-                artists, designers, technicians, musicians, and scientists.
-            </p>
-        </article>
+        <div class="geschiedenis-text">
+            <h3>NXT History</h3>
+            <p> The NXT Museum was founded by the young <br>
+                entrepreneur Merel van Helsdingen and showcases <br>
+                large-scale art installations developed through <br>
+                interdisciplinary collaborations between established <br>
+                and emerging artists, designers, technicians, musicians, and scientists.</p>
+        </div>
     </section>
-    
 
-    <section id="tijden">
-        <img id="foto2" src="img/NXTMuseumTijden.jpg"
-            alt="NXT Museum project with various colors that complement each other visible on the walls and the floor.">
+
+    <section class="tijdeninfo">
+        <img id="foto2" src="img/foto8.jpg"
+            alt="NXT Museum project met verschillende kleuren die bij elkaar passen wat op de muren en de grond te zien is.">
         <div id="myModal1" class="modal1">
             <span class="close">&times;</span>
             <img class="modal-content" id="img02">
@@ -73,7 +73,7 @@
                 Wed: 11 – 21:30 <br>
                 Thurs – Sat : 10:30 – 22:30
             </p> <br>
-            <h2>Special Opening Hours</h2>
+            <h2>Spcial Opening Hours</h2>
             <p>
                 24 december : 10:30 – 17:30<br>
                 25 december : Closed<br>
@@ -85,22 +85,74 @@
     </section>
 
     <div class="reviews">
-        <div class="review" id="review1">
-            <h3> Naomi Toure</h3>
-            <p>A unique and interactive way to experience a museum. The living room is truly an amazing experience.
-                You'll be amazed at what is possible with digital art. I will definitely go again</p>
-        </div>
-        <div class="review" id="review2">
-            <h3>Jacky Luttikhuis</h3>
-            <p>What you get to see is really beautiful, I can't deny that. It was just quite disappointing that it's so
-                little, especially considering the money you pay for it. Very unfortunate!</p>
+        <div class="inner">
+            <h1>Reviews</h1>
+            <div class="border"></div>
 
+            <section class="reviews-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="review">
+                            <div class="name">Full Name</div>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sit ducimus saepe
+                                sunt accusantium maxime, iusto, consectetur libero molestias quaerat explicabo earum
+                                quasi
+                                odit qui dolorum temporibus incidunt officia enim.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="review">
+                            <div class="name">Full Name</div>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sit ducimus saepe
+                                sunt accusantium maxime, iusto, consectetur libero molestias quaerat explicabo earum
+                                quasi
+                                odit qui dolorum temporibus incidunt officia enim.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="review">
+                            <div class="name">Full Name</div>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit sit ducimus saepe
+                                sunt accusantium maxime, iusto, consectetur libero molestias quaerat explicabo earum
+                                quasi
+                                odit qui dolorum temporibus incidunt officia enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
     <footer class="footer">
         <div class="footer">
-            <div class="row">
+            <div class="rowr">
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
@@ -117,7 +169,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Follow NXT </h4>
+                    <h4>Follow NXT</h4>
                     <div class="social-links">
                         <a href="https://www.instagram.com/nxtmuseum/" target="_blank"> <i
                                 class="fab  fa-instagram"></i></a>
@@ -130,9 +182,7 @@
                 <div class="footer-col">
                     <h4>Stay in the loop with what's Nxt</h4>
                     <ul>
-                        <li><a href="#">We’d like to send you e-mails now and then.
-                        </a></li>
-                        
+                        <li><a href="#">We’d like to send you e-mails now and then.</a></li>
                         <form>
                             <i style="font-size:24px" class="fa">&#xf0e0;</i>
                             <input type="email" placeholder="E-MAIL ADRES" required>
