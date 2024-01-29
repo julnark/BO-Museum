@@ -131,7 +131,6 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-
 #foto1 {
     height: 40vb;
     border-radius: 10px;
@@ -143,20 +142,31 @@ nav ul li a:hover {
 
 #foto2 {
     height: 40vb;
-    margin-left: 30vw;
+    margin-left: 17.4vw;
     margin-top: 10vw;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
+#foto3{
+    height: 40vb;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 60vw;
+    margin-top: 5vw;
+}
+
 #foto1,
-#foto2:hover {
+#foto2, 
+#foto3:hover {
     opacity: 0.7;
 }
 
 .modal,
-.modal1 {
+.modal1 ,
+.modal2{
     display: none;
     position: fixed;
     z-index: 1;
@@ -178,7 +188,8 @@ nav ul li a:hover {
 }
 
 #caption,
-#caption1 {
+#caption1,
+#caption2 {
     margin: auto;
     display: block;
     width: 80%;
@@ -191,7 +202,8 @@ nav ul li a:hover {
 
 .modal-content,
 #caption,
-#caption1 {
+#caption1,
+#caption2 {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -223,11 +235,35 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+.info-text h3{
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-top: 80px;
+    margin-left: -83.5vw;
+}
+
+.info-text p{
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-left: -83.5vw;
+}
+
 .tijden {
-    margin-top: 10vw;
-    margin-left: 60vw;
+    margin-left: 55vw;
     width: 100%;
-    margin-top: -14vw;
+    margin-top: -19vw;
     color: whitesmoke;
 }
 
@@ -244,6 +280,7 @@ nav ul li a:hover {
     text-align: center;
     color: whitesmoke;
     text-align: center;
+    margin-top: 60px;
 }
 
 .inner{

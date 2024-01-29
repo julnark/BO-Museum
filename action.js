@@ -28,3 +28,18 @@ span1.onclick = function() {
     modal1.style.display = "none";
 }
 
+var modal2 = document.getElementById("myModal2");
+var img2 = document.getElementById("foto3");
+var modalImg2 = document.getElementById("img03");
+var captionText2 = document.getElementById("caption2");
+img2.onclick = function(){
+  modal2.style.display = "block";
+  modalImg2.src = this.src;
+  captionText2.innerHTML = this.alt;
+}
+
+var span2 = document.getElementsByClassName("close")[2];
+span2.onclick = function() { 
+    modal2.style.display = "none";
+}
+
